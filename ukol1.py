@@ -18,17 +18,27 @@ def count_char_rec(string: str, char: str) -> int:
     #     result = 1
     return (string[0] == char) + count_char_rec(string[1:], char)
 
+# fibonachi pokud beru ze 0 je prvni prvek
+# def fibonachi_rec(n):
+#     if n == 1:
+#         return 0
+#     elif n == 2:
+#         return 1
+#     elif n < 1:
+#         return "cislo n musi byt vetsi nez 0"
+#     else:
+#         return fibonachi_rec(n-1) + fibonachi_rec(n-2)
 
-def fibonachi_rec(n):
-    if n == 1:
-        return 0
-    elif n == 2:
-        return 1
-    elif n < 1:
-        return "cislo n musi byt vetsi nez 0"
-    else:
-        return fibonachi_rec(n-1) + fibonachi_rec(n-2)
-
+# fibonachi pokud beru ze 0 je nulty prvek
+# def fibonachi_rec(n):
+#     if n == 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     elif n < 0:
+#         return "cislo n musi byt vetsi nez 0"
+#     else:
+#         return fibonachi_rec(n-1) + fibonachi_rec(n-2)
 
 if __name__ == "__main__":
     print(f"sum list[5, 3, 6, 9]: {rec_list_sum([5, 3, 6, 9])}")
